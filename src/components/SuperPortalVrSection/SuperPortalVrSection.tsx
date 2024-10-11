@@ -92,7 +92,10 @@ const SuperPortalVrSection: React.FC = () => {
                 </div>
 
                 <div className="flex-col justify-center items-center gap-6 flex mt-10">
-                    <img src='/assets/images/super-portal-vr-image.png' alt="SuperPortal VR" className="" />
+                    <img
+                        src={process.env.PUBLIC_URL + '/assets/images/super-portal-vr-image.png'}
+                        alt="SuperPortal VR"
+                    />
                 </div>
             </section>
 
