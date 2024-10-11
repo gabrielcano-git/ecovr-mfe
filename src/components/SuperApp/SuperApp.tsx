@@ -26,32 +26,6 @@ const SuperApp: React.FC = () => {
                                             solução.</b>
                                     </div>
                                 </div>
-                                <div className={styles['default-button-parent1']}>
-                                    <div className={styles['default-button19']}>
-                                        <div className={styles['center13']}>
-                                            <img
-                                                className={styles['iconsvr45']}
-                                                alt=""
-                                                src="/assets/images/iconsvr.svg" />
-
-                                            <div className={styles['button19']}>Personalize o
-                                                Multi</div>
-                                            <img
-                                                className={styles['iconsvr46']}
-                                                alt=""
-                                                src="/assets/images/iconsvr.svg" />
-                                        </div>
-                                    </div>
-                                    <div className={styles['default-button20']}>
-                                        <img className={styles['iconsvr47']} alt=""
-                                            src="/assets/images/iconsvr.svg" />
-
-                                        <div className={styles['button20']}>Solicite uma
-                                            proposta</div>
-                                        <img className={styles['iconsvr48']} alt=""
-                                            src="/assets/images/iconsvr.svg" />
-                                    </div>
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -63,7 +37,7 @@ const SuperApp: React.FC = () => {
                                         <img
                                             className={styles['iconsfeather10']}
                                             alt=""
-                                            src="/assets/images/ico-check.png" />
+                                            src={process.env.PUBLIC_URL + '/assets/images/ico-check.png'} />
 
                                         <div className={styles['multissaldos-em-um-container']}>
                                             <span
@@ -77,7 +51,7 @@ const SuperApp: React.FC = () => {
                                         <img
                                             className={styles['iconsfeather11']}
                                             alt=""
-                                            src="/assets/images/ico-check.png" />
+                                            src={process.env.PUBLIC_URL + '/assets/images/ico-check.png'} />
 
                                         <div className={styles['pague-do-seu-container']}>
                                             <b>Pague do seu jeito</b>
@@ -89,7 +63,7 @@ const SuperApp: React.FC = () => {
                                         <img
                                             className={styles['iconsfeather12']}
                                             alt=""
-                                            src="/assets/images/ico-check.png" />
+                                            src={process.env.PUBLIC_URL + '/assets/images/ico-check.png'} />
 
                                         <div className={styles['controle-de-ponto-container']}>
                                             <b>Controle de ponto</b>
@@ -101,7 +75,7 @@ const SuperApp: React.FC = () => {
                                         <img
                                             className={styles['iconsfeather13']}
                                             alt=""
-                                            src="/assets/images/ico-check.png" />
+                                            src={process.env.PUBLIC_URL + '/assets/images/ico-check.png'} />
 
                                         <div className={styles['emprstimos-na-mo-container']}>
                                             <b className={styles['emprstimos-na-mo']}>Empréstimos
@@ -114,7 +88,7 @@ const SuperApp: React.FC = () => {
                                         <img
                                             className={styles['iconsfeather14']}
                                             alt=""
-                                            src="/assets/images/ico-check.png" />
+                                            src={process.env.PUBLIC_URL + '/assets/images/ico-check.png'} />
 
                                         <div className={styles['cashback-ofertas-e-container']}>
                                             <span
@@ -135,7 +109,7 @@ const SuperApp: React.FC = () => {
                                     className={styles['wrapper-group-1000004284-child']}
                                     loading="lazy"
                                     alt=""
-                                    src="/assets/images/banner-supper-appvr.png" />
+                                    src={process.env.PUBLIC_URL + '/assets/images/banner-supper-appvr.png'} />
                             </div>
                         </div>
                     </div>
@@ -152,12 +126,12 @@ const SuperApp: React.FC = () => {
                                 <img
                                     className={styles['image-5-icon']}
                                     alt=""
-                                    src="/assets/images/ico-googleplay.png" />
+                                    src={process.env.PUBLIC_URL + '/assets/images/ico-googleplay.png'} />
 
                                 <img
                                     className={styles['image-6-icon']}
                                     alt=""
-                                    src="/assets/images/ico-appstore.png" />
+                                    src={process.env.PUBLIC_URL + '/assets/images/ico-appstore.png'} />
                             </div>
                         </div>
                     </div>
