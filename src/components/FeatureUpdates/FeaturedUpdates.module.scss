@@ -1,0 +1,44 @@
+.featured-updates {
+    @apply
+        px-4
+        md:px-0
+        pt-[59px]
+        pb-[50px]
+        md:pb-[88px];
+
+    &__container {
+        @apply
+            container
+            mx-auto
+            px-0
+            md:px-4
+            pb-8
+            md:pb-0;
+    }
+}
+
+.swiper-news {
+    padding-bottom: 28px !important;
+}
+
+.swiper-news :global(.swiper-pagination) {
+    bottom: 0 !important;
+
+    @media screen and (min-width: 767px) {
+        @apply
+            hidden;
+    }
+}
+
+.swiper-news :global(.swiper-pagination-bullet) {
+    @apply
+        w-2
+        h-2
+        opacity-100
+        bg-[#caf5c6];
+}
+
+.swiper-news :global(.swiper-pagination-bullet-active) {
+    @apply
+        bg-[#02d72f];
+}

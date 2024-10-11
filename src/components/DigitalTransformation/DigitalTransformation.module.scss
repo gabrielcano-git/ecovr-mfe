@@ -1,0 +1,132 @@
+.digital-transformation {
+    $this: &;
+
+    @apply
+        bg-green-100
+        py-[88px]
+        px-6
+        rounded-lg;
+
+    &__content {
+        @apply
+            hidden
+            w-fit
+            mx-auto
+            md:grid
+            grid-cols-[minmax(0,_399px)_330px_minmax(0,_399px)]
+            gap-[51px]
+            items-center;
+    }
+
+    &__problem-list {
+        @apply space-y-6;
+    }
+
+    &__problem-item,
+    .accordion-header {
+        @apply
+            flex
+            gap-4
+            cursor-pointer;
+
+        &--active {
+            #{$this}__problem-description {
+                @apply text-[#1b2126];
+            }
+        }
+    }
+
+    &__problem-description {
+        @apply
+            text-[#757575]
+            text-xl
+            font-bold
+            font-['Montserrat']
+            leading-[30px];
+    }
+
+    &__solution,
+    .accordion-content {
+        // hidden
+        @apply
+            flex
+            flex-col
+            gap-6;
+
+        // &--active,
+        // &.active {
+        //     @apply
+        //         flex;
+        // }
+
+        &-intro {
+            @apply text-[#034d2e] text-base font-bold font-['Montserrat'] leading-relaxed tracking-tight;
+
+            strong {
+                @apply text-4xl font-bold text-green-700 mb-2;
+            }
+        }
+
+        &-description {
+            @apply
+                text-black
+                text-sm
+                font-normal
+                font-['Montserrat']
+                leading-tight
+                tracking-tight;
+
+            strong {
+                @apply
+                    font-bold;
+            }
+        }
+    }
+
+    &__cta {
+        @apply
+            w-fit
+            h-12
+            px-4
+            bg-[#02d72f]
+            rounded-[100px]
+            justify-center
+            items-center
+            gap-2
+            inline-flex
+            justify-start
+            items-center
+            gap-2
+            flex
+            text-[#1b2126]
+            text-sm
+            font-semibold
+            font-['Montserrat']
+            leading-[21px]
+            tracking-tight;
+
+            &:hover {
+                @apply bg-[#02d72f]/80;
+            }
+    }
+
+    .accordion-item {
+        @apply
+            pb-4 border-b border-[#757575] justify-start items-start gap-2 flex flex-col mb-6;
+    }
+
+    .accordion-header .digital-transformation__problem-description {
+        @apply
+            text-[#1b2126]
+            text-base
+            font-bold
+            font-['Montserrat']
+            leading-snug;
+    }
+}
+
+.accordion {
+    @apply
+        block
+        md:hidden;
+}

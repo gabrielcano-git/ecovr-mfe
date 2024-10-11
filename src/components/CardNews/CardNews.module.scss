@@ -1,0 +1,85 @@
+.card-news {
+    @apply
+        rounded-lg
+        overflow-hidden
+        shadow-md;
+
+    &__image {
+        @apply
+            h-[116px]
+            md:h-[190px]
+            rounded-tl-2xl
+            rounded-tr-2xl
+            w-full
+            object-cover;
+    }
+
+    &__content {
+        background: var(--Neutral-Light, #F5F5F5);
+
+        @apply
+            p-4;
+    }
+
+    &__date {
+        @apply
+            text-[#00b11d]
+            text-base
+            font-medium
+            font-['Montserrat']
+            leading-[27px]
+            tracking-tight
+            block mb-[4px];
+    }
+
+    &__title {
+        @apply
+            text-[#1b2126]
+            text-lg
+            font-bold
+            font-['Montserrat']
+            leading-normal
+            tracking-tight
+            mb-[8px];
+    }
+
+    &__excerpt {
+        @apply
+            text-[#1b2126]
+            text-base
+            font-medium
+            font-['Montserrat']
+            leading-snug
+            tracking-tight
+            mb-[4px];
+    }
+
+    &__link {
+        @apply
+            flex
+            items-center
+            justify-center
+            gap-[5px]
+            w-fit
+            text-[#00b11d]
+            text-sm
+            font-semibold
+            font-['Montserrat']
+            leading-[32px]
+            tracking-tight
+            block
+            transition-all
+            duration-300
+            ease-in-out;
+
+        svg {
+            fill: #00b11d;
+        }
+
+        &:hover {
+            @apply
+                text-[#00b11d/80]
+                gap-[8px];
+        }
+    }
+}

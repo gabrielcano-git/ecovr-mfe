@@ -1,0 +1,45 @@
+.section-title {
+    font-family: 'Montserrat', sans-serif;
+
+    @apply
+        text-[#1b2126]
+        text-[24px]
+        md:text-[32px]
+        font-bold
+        leading-[27.6px]
+        md:leading-10
+        tracking-tight
+        text-left
+        md:text-center
+        mb-10;
+
+    u {
+        @apply
+            no-underline;
+
+        animation: underline-highlight 0.3s ease 0.5s forwards;
+    }
+
+    br {
+        /* Estilos para dispositivos móveis */
+        @media screen and (max-width: 767px) {
+            @apply inline mb-0;
+            content: " ";
+
+            /* Opcional: adiciona um pequeno espaço após o <br> no mobile */
+            &:after {
+                content: " ";
+                white-space: pre;
+            }
+        }
+    }
+}
+
+@keyframes underline-highlight {
+    from {
+        @apply bg-[#fff110] bg-opacity-0;
+    }
+    to {
+        @apply bg-[#fff110] bg-opacity-100;
+    }
+}

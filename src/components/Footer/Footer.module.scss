@@ -1,0 +1,210 @@
+.footer {
+  $this: &;
+
+  background-color: rgb(3, 77, 46);
+
+  @apply
+    text-[#eeeeee]
+    p-[40px_18px]
+    text-xs;
+
+  &__container {
+    @apply
+      container
+      mx-auto;
+  }
+
+  &__menus {
+    @apply
+      // grid
+      // grid-cols-none
+      // md:grid-cols-4
+      // gap-x-4
+      // gap-y-0
+      // md:gap-y-[58px];
+      flex
+      flex-col
+      md:flex-row
+      justify-between;
+  }
+
+  &__menu-group {
+    @apply
+      pb-[8px]
+      md:pb-0;
+
+    &--logo {
+      @apply
+        md:col-start-1
+        md:col-end-4;
+    }
+
+    &--contact {
+      @apply
+        md:col-start-4
+        md:col-end-8;
+    }
+
+    &--ombudsman {
+      @apply
+        md:col-start-8
+        md:col-end-13;
+    }
+
+    #{$this}__menu-title {
+      @apply
+        text-base
+        leading-[26px]
+        font-semibold
+        mb-[16px]
+        md:mb-[22px]
+        uppercase
+        flex
+        items-center
+        justify-between
+        cursor-pointer
+        md:cursor-default;
+
+      svg {
+        @apply
+          block
+          md:hidden
+          transition-all
+          duration-300;
+      }
+
+      &[aria-expanded="true"] svg {
+        @apply
+          rotate-180;
+      }
+    }
+
+    ul {
+      @apply
+        list-none
+        pb-[16px]
+        md:p-0;
+
+      li {
+        @apply
+          mb-[16px];
+
+        a {
+          @apply
+            text-white
+            no-underline
+            font-medium
+            text-[14px];
+        }
+      }
+    }
+  }
+
+  &__social-icons {
+    @apply
+      mt-5
+      flex
+      gap-[25px];
+
+    a {
+      @apply
+        w-8
+        h-8
+        bg-white
+        flex
+        items-center
+        justify-center
+        text-[#034d2e]
+        text-lg
+        rounded-full
+        transition-all
+        duration-300;
+    }
+  }
+
+  &__phone {
+    @apply
+      text-2xl
+      leading-[124%]
+      font-bold mb-4;
+  }
+
+  &__accordion-icon {
+    @apply
+      inline-block
+      md:hidden;
+  }
+
+  &__accordion-content {
+    @apply
+      mb-[24px]
+      md:mb-0
+      hidden
+      md:block;
+
+    &.active {
+      @apply
+        block;
+    }
+  }
+
+  &__divider {
+    @apply
+      w-full
+      border-t
+      border-[#02D72F]
+      my-[39px];
+  }
+
+  &__bottom {
+    @apply
+      container
+      mx-auto
+      flex
+      flex-col-reverse
+      md:flex-row
+      justify-between
+      gap-[16px];
+  }
+
+  &__copyright {
+    @apply
+      inline-block
+      w-fit;
+  }
+
+  &__links {
+    @apply
+      w-fit
+      flex
+      md:inline-block
+      flex-col;
+  }
+
+  &__link {
+    &--custom {
+      @apply
+        text-white
+        leading-7;
+
+      &:after {
+        @apply
+          text-[#02D72F]
+          content-["|"]
+          mx-2;
+      }
+
+      &:last-child::after {
+        @apply
+          hidden;
+      }
+
+      @media screen and (max-width: 768px) {
+        &:after {
+          @apply
+            hidden;
+        }
+      }
+    }
+  }
+}

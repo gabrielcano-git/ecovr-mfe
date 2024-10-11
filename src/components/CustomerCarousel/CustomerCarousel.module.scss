@@ -1,0 +1,11 @@
+.swiper-container {
+    @apply overflow-hidden;
+
+    .wrap-image {
+        @apply
+            h-[72px]
+            flex
+            items-center
+            justify-center;
+    }
+}

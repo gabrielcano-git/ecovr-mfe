@@ -1,0 +1,94 @@
+.super-portal-vr {
+    @apply
+        bg-neutral-100/100
+        pt-[88px]
+        pb-[212px]
+        px-[18px];
+
+    &__title {
+        @apply
+            text-[#1b2126]
+            text-5xl
+            font-bold
+            font-['Montserrat']
+            leading-[55.20px]
+            block
+            w-fit;
+    }
+
+    &__subtitle {
+        @apply
+            text-[#1b2126]
+            text-2xl
+            font-bold
+            font-['Montserrat']
+            leading-[27px]
+            tracking-tight
+            block
+            w-fit;
+    }
+
+    &__description {
+        @apply
+            text-[#1b2126]
+            text-base
+            font-normal
+            font-['Montserrat']
+            leading-snug
+            block
+            w-fit;
+
+        strong {
+            @apply
+                font-bold;
+        }
+    }
+
+    &__cta {
+        @apply
+            h-12
+            px-4
+            bg-[#02d72f]
+            rounded-[100px]
+            justify-center
+            items-center
+            inline-flex
+            text-[#1b2126]
+            text-sm
+            font-semibold
+            font-['Montserrat']
+            leading-[21px]
+            tracking-tight;
+
+        &:hover {
+            @apply
+                bg-[#02d72f]/80;
+        }   
+    }
+}
+
+.swiper-super-portal-vr {
+    padding-bottom: 28px !important;
+}
+
+.swiper-super-portal-vr :global(.swiper-pagination) {
+    bottom: 0 !important;
+
+    @media screen and (min-width: 767px) {
+        @apply
+            hidden;
+    }
+}
+
+.swiper-super-portal-vr :global(.swiper-pagination-bullet) {
+    @apply
+        w-2
+        h-2
+        opacity-100
+        bg-[#caf5c6];
+}
+
+.swiper-super-portal-vr :global(.swiper-pagination-bullet-active) {
+    @apply
+        bg-[#02d72f];
+}

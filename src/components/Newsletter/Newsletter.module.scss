@@ -1,0 +1,81 @@
+.newsletter {
+  @apply
+    bg-[#02d72f]
+    py-[40px]
+    px-[18px];
+
+  &__container {
+    @apply
+      container
+      mx-auto
+      flex
+      flex-col
+      md:flex-row
+      gap-[50px]
+      items-center
+      justify-between;
+  }
+
+  &__image {
+    @apply
+      hidden
+      md:block;
+  }
+
+  &__text {
+    @apply
+      md:w-[293px]
+      text-[#1b2126]
+      text-2xl
+      font-bold
+      leading-7;
+  }
+
+  &__form {
+    @apply
+      flex-col
+      justify-start
+      items-start
+      gap-4
+      inline-flex;
+
+      &-text {
+        @apply
+          text-[#1b2126]
+          text-base
+          font-normal
+          leading-relaxed;
+      }
+
+      &-wrap-inputs {
+        @apply
+          self-stretch
+          justify-start
+          items-center
+          gap-2
+          flex
+          flex-col
+          md:flex-row;
+      }
+
+      input {
+        @apply
+          w-full
+          max-w-[380px]
+          h-12
+          px-6
+          py-[13px]
+          bg-white
+          rounded-[56px]
+          justify-start
+          items-center
+          gap-2
+          flex
+          text-[#9e9e9e]
+          text-sm
+          font-semibold
+          leading-[21px]
+          tracking-tight;
+      }
+  }
+}

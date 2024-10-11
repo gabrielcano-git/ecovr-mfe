@@ -1,0 +1,38 @@
+.card-simple {
+    @apply
+        w-full
+        max-w-[296px]
+        min-h-[310px]
+        p-4
+        md:px-6
+        md:pt-6
+        md:pb-0
+        bg-white
+        rounded-2xl
+        shadow
+        flex-col
+        justify-between
+        items-start
+        gap-4
+        md:gap-8
+        flex;
+  
+    &__title {
+      @apply
+        md:text-center
+        text-[#1b2126]
+        text-base
+        md:text-xl
+        font-bold
+        font-['Montserrat']
+        leading-snug
+        md:leading-[27px];
+    }
+  
+    &__image {
+      @apply
+        w-full
+        rounded-tl-lg
+        rounded-tr-lg;
+    }
+}

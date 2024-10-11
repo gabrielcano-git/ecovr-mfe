@@ -1,0 +1,78 @@
+@import '~@fortawesome/fontawesome-free/scss/solid';
+
+.card-solution {
+    @apply
+        w-full
+        min-h-[420px]
+        p-8
+        rounded-tr-[40px]
+        rounded-bl-[40px]
+        flex-col
+        justify-start
+        items-start
+        gap-6
+        flex
+        relative;
+
+    &::after {
+        font-family: 'Font Awesome 6 Free';
+        content: '\f105';
+        top: calc(50% - 1.5rem);
+        right: -32px;
+        z-index: 9;
+        font-weight: 900;
+
+        @apply
+            absolute
+            hidden
+            md:flex
+            w-12
+            h-12
+            p-2
+            bg-white
+            rounded-[100px]
+            justify-center
+            items-center
+            gap-2;
+    }
+
+    &:last-child::after {
+        @apply hidden;
+    }
+
+    &--primary {
+        @apply bg-[#9aec91];
+    }
+
+    &--secondary {
+        @apply bg-[#e1ebf5];
+    }
+
+    &__image {
+        @apply w-full object-cover rounded-tr-3xl rounded-bl-3xl max-h-[162px];
+    }
+
+    &__content {
+        @apply flex flex-col gap-2;
+    }
+
+    &__title {
+        @apply text-[#1b2126] text-xl font-bold font-['Montserrat'] leading-[27px] tracking-tight;
+    }
+
+    &__description {
+        @apply text-black text-base font-normal font-['Montserrat'] leading-snug tracking-tight;
+
+        strong {
+            @apply font-bold;
+        }
+    }
+
+    &__link {
+        @apply w-full h-12 px-4 bg-[#1b2126] rounded-[100px] justify-center items-center gap-2 inline-flex justify-start items-center gap-2 flex text-white text-sm font-semibold font-['Montserrat'] leading-[21px] tracking-tight;
+
+        &:hover {
+            @apply bg-[#1b2126]/80;
+        }
+    }
+}

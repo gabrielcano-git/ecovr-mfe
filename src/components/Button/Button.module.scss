@@ -1,0 +1,68 @@
+.btn {
+    @apply
+        w-full
+        h-12
+        px-4
+        rounded-[100px]
+        justify-center
+        items-center
+        gap-2
+        inline-flex
+        text-sm
+        font-semibold
+        leading-[21px]
+        tracking-tight
+        transition-all
+        duration-300;
+
+    &--fit {
+        @apply
+            w-fit;
+    }
+
+    &--lg {
+        @apply
+            text-base
+            leading-[19px];
+    }
+
+    &--primary {
+        @apply
+            bg-[#02d72f]
+            text-[#1b2126];
+
+        &:hover {
+            @apply
+                bg-[#1b2126]
+                text-white;
+
+            svg {
+                stroke: white !important;
+            }
+        }
+    
+        &:disabled {
+            @apply
+                bg-[#9e9e9e]
+                text-[#1b2126];
+            
+            &:hover {
+                @apply
+                    bg-[#9e9e9e]
+                    text-[#1b2126];
+            }
+        }
+    }
+    
+    &--black {
+        @apply
+            bg-[#1b2126]
+            text-white;
+        
+        &:hover {
+            @apply
+                bg-[#fafafa]
+                text-[#1b2126];
+        }   
+    }
+}

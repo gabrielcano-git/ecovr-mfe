@@ -1,0 +1,15 @@
+.solutions {
+    @apply
+        px-[18px]
+        py-[50px]
+        md:px-0
+        md:py-[88px];
+
+    &__grid {
+        @apply
+            grid
+            grid-cols-1
+            md:grid-cols-3
+            gap-4;
+    }
+}
