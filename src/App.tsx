@@ -1,4 +1,4 @@
-import DigitalTransformation from './components/DigitalTransformation/DigitalTransformation';
+// import DigitalTransformation from './components/DigitalTransformation/DigitalTransformation';
 import Solutions from './components/Solutions/SolutionsSection';
 import TestimonialsSection from './components/Testemonials/Testemonials';
 import ContactForm from './components/ContactForm/ContactForm';
@@ -21,7 +21,7 @@ const App: React.FC = () => {
 
       {/* Sua empresa tem um problema? */}
       {/* TODO: Ajustar esse componente cagado */}
-      <DigitalTransformation />
+      {/* <DigitalTransformation /> */}
 
       {/* Soluções sob medida para quem quer mais praticidade na gestão. */}
       <Solutions />

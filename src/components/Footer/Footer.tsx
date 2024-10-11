@@ -24,7 +24,7 @@ const AccordionItem: React.FC<AccordionItemProps> = ({ title, children }) => {
         styles["footer__menu-group"] + ` ` + styles["footer__column--accordion"]
       }
     >
-      <h3
+      <button
         className={styles["footer__menu-title"]}
         aria-expanded={isExpanded}
         onClick={() => setIsExpanded(!isExpanded)}
@@ -37,7 +37,7 @@ const AccordionItem: React.FC<AccordionItemProps> = ({ title, children }) => {
             isExpanded ? styles.expanded : ""
           }`}
         />
-      </h3>
+      </button>
 
       <ul
         className={

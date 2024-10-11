@@ -14,31 +14,31 @@ const SuperPortalVrSection: React.FC = () => {
     const superAppItems: SuperAppItem[] = [
         {
             title: 'Digitalize, agende e automatize processos',
-            image: 'https://via.placeholder.com/248x173',
+            image: 'https://picsum.photos/248/173',
         },
         {
             title: 'Gestão centralizada e simplificada para o empregador',
-            image: 'https://via.placeholder.com/248x173',
+            image: 'https://picsum.photos/248/173',
         },
         {
             title: 'Gestão centralizada e simplificada para o empregador',
-            image: 'https://via.placeholder.com/248x173',
+            image: 'https://picsum.photos/248/173',
         },
         {
             title: 'Gestão centralizada e simplificada para o empregador',
-            image: 'https://via.placeholder.com/248x173',
+            image: 'https://picsum.photos/248/173',
         },
         {
             title: 'Gestão centralizada e simplificada para o empregador',
-            image: 'https://via.placeholder.com/248x173',
+            image: 'https://picsum.photos/248/173',
         },
         {
             title: 'Gestão centralizada e simplificada para o empregador',
-            image: 'https://via.placeholder.com/248x173',
+            image: 'https://picsum.photos/248/173',
         },
         {
             title: 'Gestão centralizada e simplificada para o empregador',
-            image: 'https://via.placeholder.com/248x173',
+            image: 'https://picsum.photos/248/173',
         },
     ];
 

@@ -20,35 +20,35 @@ interface NewsItem {
 const FeaturedUpdates: React.FC = () => {
     const newsItems: NewsItem[] = [
         {
-            image: "https://via.placeholder.com/399x190",
+            image: "https://picsum.photos/399/190",
             date: "10 jun, 2024",
             title: "7 benefícios de oferecer VR e VA aos funcionários",
             excerpt: "O VR e o VA são benefícios proporcionados pelas empresas aos seus funcionários como parte da sua política de Recursos Humanos.",
             link: "#"
         },
         {
-            image: "https://via.placeholder.com/399x190",
+            image: "https://picsum.photos/399/190",
             date: "10 jun, 2024",
             title: "7 benefícios de oferecer VR e VA aos funcionários",
             excerpt: "O VR e o VA são benefícios proporcionados pelas empresas aos seus funcionários como parte da sua política de Recursos Humanos.",
             link: "#"
         },
         {
-            image: "https://via.placeholder.com/399x190",
+            image: "https://picsum.photos/399/190",
             date: "10 jun, 2024",
             title: "7 benefícios de oferecer VR e VA aos funcionários",
             excerpt: "O VR e o VA são benefícios proporcionados pelas empresas aos seus funcionários como parte da sua política de Recursos Humanos.",
             link: "#"
         },
         {
-            image: "https://via.placeholder.com/399x190",
+            image: "https://picsum.photos/399/190",
             date: "10 jun, 2024",
             title: "7 benefícios de oferecer VR e VA aos funcionários",
             excerpt: "O VR e o VA são benefícios proporcionados pelas empresas aos seus funcionários como parte da sua política de Recursos Humanos.",
             link: "#"
         },
         {
-            image: "https://via.placeholder.com/399x190",
+            image: "https://picsum.photos/399/190",
             date: "10 jun, 2024",
             title: "7 benefícios de oferecer VR e VA aos funcionários",
             excerpt: "O VR e o VA são benefícios proporcionados pelas empresas aos seus funcionários como parte da sua política de Recursos Humanos.",
