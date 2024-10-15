@@ -39,68 +39,57 @@ const SuperApp: React.FC = () => {
                                             alt=""
                                             src={process.env.PUBLIC_URL + '/assets/images/ico-check.png'} />
 
-                                        <div className={styles['multissaldos-em-um-container']}>
-                                            <span
-                                                className={styles['multissaldos-em-um']}>Multissaldos
-                                                em um único cartão para
-                                            </span>
-                                            <b>facilitar a rotina.</b>
+                                        <div className={styles['feature-components__text']}>
+                                            Multissaldos em um único cartão para <strong>facilitar a rotina.</strong>
                                         </div>
                                     </div>
-                                    <div className={styles['feature-components1']}>
+
+                                    <div className={styles['feature-components']}>
                                         <img
-                                            className={styles['iconsfeather11']}
+                                            className={styles['iconsfeather10']}
                                             alt=""
                                             src={process.env.PUBLIC_URL + '/assets/images/ico-check.png'} />
 
-                                        <div className={styles['pague-do-seu-container']}>
-                                            <b>Pague do seu jeito</b>
-                                            <span className={styles['por-qr-code']}>, por QR Code,
-                                                link e cartão virtual. </span>
+                                        <div className={styles['feature-components__text']}>
+                                            <strong>Pague do seu jeito</strong>, por QR Code, link e cartão virtual.
                                         </div>
                                     </div>
-                                    <div className={styles['feature-components2']}>
+                                    <div className={styles['feature-components']}>
                                         <img
-                                            className={styles['iconsfeather12']}
+                                            className={styles['iconsfeather10']}
                                             alt=""
                                             src={process.env.PUBLIC_URL + '/assets/images/ico-check.png'} />
 
-                                        <div className={styles['controle-de-ponto-container']}>
-                                            <b>Controle de ponto</b>
-                                            <span className={styles['em-apenas-um']}> em apenas um
-                                                botão. </span>
+                                        <div className={styles['feature-components__text']}>
+                                            <strong>Controle de ponto</strong> em apenas um botão.
                                         </div>
                                     </div>
-                                    <div className={styles['feature-components3']}>
+                                    <div className={styles['feature-components']}>
                                         <img
-                                            className={styles['iconsfeather13']}
+                                            className={styles['iconsfeather10']}
                                             alt=""
                                             src={process.env.PUBLIC_URL + '/assets/images/ico-check.png'} />
 
-                                        <div className={styles['emprstimos-na-mo-container']}>
-                                            <b className={styles['emprstimos-na-mo']}>Empréstimos
-                                                na mão</b>
-                                            <span className={styles['em-at-3']}> em até 3 minutos.
-                                            </span>
+                                        <div className={styles['feature-components__text']}>
+                                            <strong>Empréstimos na mão</strong> em até 3 minutos.
                                         </div>
                                     </div>
-                                    <div className={styles['feature-components4']}>
+                                    <div className={styles['feature-components']}>
                                         <img
-                                            className={styles['iconsfeather14']}
+                                            className={styles['iconsfeather10']}
                                             alt=""
                                             src={process.env.PUBLIC_URL + '/assets/images/ico-check.png'} />
 
-                                        <div className={styles['cashback-ofertas-e-container']}>
-                                            <span
-                                                className={styles['cashback-ofertas-e']}>Cashback*,
-                                                ofertas e descontos
-                                            </span>
-                                            <b>para o dinheiro render mais. </b>
+                                        <div className={styles['feature-components__text']}>
+                                            Cashback*, ofertas e descontos <strong>para o dinheiro render mais. </strong>
                                         </div>
                                     </div>
                                 </div>
 
-                                <Button variants={['black', 'fit']}>
+                                <Button
+                                    className='w-full md:w-fit'
+                                    variants={['black', 'fit']}
+                                >
                                     Conhecer solução
                                 </Button>
                             </div>
@@ -117,21 +106,23 @@ const SuperApp: React.FC = () => {
                         <div className={styles['download-content']}>
                             <div className={styles['download-content-inner']}>
                                 <div className={styles['baixe-o-superapp-vr-e-simplifi-parent']}>
-                                    <b className={styles['baixe-o-superapp']}>Baixe o SuperApp VR
-                                        e simplifique sua rotina. </b>
-                                    <div className={styles['download-background']}></div>
+                                    Baixe o <u>SuperApp VR</u> e simplifique sua rotina.
                                 </div>
                             </div>
                             <div className={styles['download-images']}>
-                                <img
-                                    className={styles['image-5-icon']}
-                                    alt=""
-                                    src={process.env.PUBLIC_URL + '/assets/images/ico-googleplay.png'} />
+                                <a href="http://google.com" target="_blank" rel="noopener noreferrer">
+                                    <img
+                                        className={styles['image-5-icon']}
+                                        alt=""
+                                        src={process.env.PUBLIC_URL + '/assets/images/ico-googleplay.png'} />
+                                </a>
 
-                                <img
-                                    className={styles['image-6-icon']}
-                                    alt=""
-                                    src={process.env.PUBLIC_URL + '/assets/images/ico-appstore.png'} />
+                                <a href="http://google.com" target="_blank" rel="noopener noreferrer">
+                                    <img
+                                        className={styles['image-6-icon']}
+                                        alt=""
+                                        src={process.env.PUBLIC_URL + '/assets/images/ico-appstore.png'} />
+                                </a>
                             </div>
                         </div>
                     </div>
