@@ -2,6 +2,8 @@
     @apply overflow-hidden;
 
     .wrap-image {
+        filter: grayscale(100%);
+
         @apply
             h-[72px]
             flex

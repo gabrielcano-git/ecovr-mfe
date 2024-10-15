@@ -28,9 +28,9 @@ const App: React.FC = () => {
       {/* Soluções sob medida para quem quer mais praticidade na gestão. */}
       <Solutions />
 
-      {/* Super Portal Vr*/}
-      {/* TODO: Setinha no desktop */}
-      <SuperPortalVrSection />
+        {/* Super Portal Vr*/}
+        {/* TODO: Setinha no desktop */}
+        <SuperPortalVrSection />
 
       {/* Super App */}
       <SuperApp />

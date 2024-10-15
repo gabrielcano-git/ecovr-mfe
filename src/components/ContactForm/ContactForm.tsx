@@ -16,7 +16,10 @@ const ContactForm = () => {
 
                 <div className={styles['contact-form__wrapper']}>
                     <div className={styles['contact-form__image']}>
-                        <img src="https://picsum.photos/800/600" alt="Woman working on laptop" />
+                        <img
+                            src={process.env.PUBLIC_URL + '/assets/images/form-image.png'}
+                            alt="Woman working on laptop"
+                        />
                     </div>
 
                     <div className={styles['contact-form__content']}>

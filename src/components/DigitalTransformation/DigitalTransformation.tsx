@@ -151,7 +151,7 @@ const DigitalTransformation: React.FC = () => {
 
         <img
           className="w-[330px] h-[401px] rounded-tr-[40px] rounded-bl-[40px]"
-          src="https://picsum.photos/330/401"
+          src={process.env.PUBLIC_URL + '/assets/images/DigitalTransformation-image.png'}
           alt="Digital Transformation"
         />
 

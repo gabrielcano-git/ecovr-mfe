@@ -20,35 +20,21 @@ interface NewsItem {
 const FeaturedUpdates: React.FC = () => {
     const newsItems: NewsItem[] = [
         {
-            image: "https://picsum.photos/399/190",
+            image: process.env.PUBLIC_URL + '/assets/images/noticia-1.png',
             date: "10 jun, 2024",
             title: "7 benefícios de oferecer VR e VA aos funcionários",
             excerpt: "O VR e o VA são benefícios proporcionados pelas empresas aos seus funcionários como parte da sua política de Recursos Humanos.",
             link: "#"
         },
         {
-            image: "https://picsum.photos/399/190",
+            image: process.env.PUBLIC_URL + '/assets/images/noticia-2.png',
             date: "10 jun, 2024",
             title: "7 benefícios de oferecer VR e VA aos funcionários",
             excerpt: "O VR e o VA são benefícios proporcionados pelas empresas aos seus funcionários como parte da sua política de Recursos Humanos.",
             link: "#"
         },
         {
-            image: "https://picsum.photos/399/190",
-            date: "10 jun, 2024",
-            title: "7 benefícios de oferecer VR e VA aos funcionários",
-            excerpt: "O VR e o VA são benefícios proporcionados pelas empresas aos seus funcionários como parte da sua política de Recursos Humanos.",
-            link: "#"
-        },
-        {
-            image: "https://picsum.photos/399/190",
-            date: "10 jun, 2024",
-            title: "7 benefícios de oferecer VR e VA aos funcionários",
-            excerpt: "O VR e o VA são benefícios proporcionados pelas empresas aos seus funcionários como parte da sua política de Recursos Humanos.",
-            link: "#"
-        },
-        {
-            image: "https://picsum.photos/399/190",
+            image: process.env.PUBLIC_URL + '/assets/images/noticia-3.png',
             date: "10 jun, 2024",
             title: "7 benefícios de oferecer VR e VA aos funcionários",
             excerpt: "O VR e o VA são benefícios proporcionados pelas empresas aos seus funcionários como parte da sua política de Recursos Humanos.",

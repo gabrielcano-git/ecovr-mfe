@@ -17,7 +17,7 @@ interface Solution {
 const SolutionsSection: React.FC = () => {
     const solutions: Solution[] = [
         {
-            image: "https://picsum.photos/1024/683",
+            image: process.env.PUBLIC_URL + '/assets/images/solutions-1.png',
             title: "Gestão de Benefícios",
             description: "Do controle do ponto à gestão eletrônica de documentos. Tudo numa <strong>gestão num só lugar.</strong>",
             link: {
@@ -27,7 +27,7 @@ const SolutionsSection: React.FC = () => {
             variant: 'primary'
         },
         {
-            image: "https://picsum.photos/1024/683",
+            image: process.env.PUBLIC_URL + '/assets/images/solutions-2.png',
             title: "Gestão de Benefícios",
             description: "Do controle do ponto à gestão eletrônica de documentos. Tudo numa <strong>gestão num só lugar.</strong>",
             link: {
@@ -37,7 +37,7 @@ const SolutionsSection: React.FC = () => {
             variant: 'secondary'
         },
         {
-            image: "https://picsum.photos/1024/683",
+            image: process.env.PUBLIC_URL + '/assets/images/solutions-3.png',
             title: "Gestão de Benefícios",
             description: "Do controle do ponto à gestão eletrônica de documentos. Tudo numa <strong>gestão num só lugar.</strong>",
             link: {

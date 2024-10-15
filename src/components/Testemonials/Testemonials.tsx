@@ -20,21 +20,21 @@ interface Testimonial {
 const TestimonialsSection: React.FC = () => {
   const testimonials: Testimonial[] = [
     {
-      image: "https://picsum.photos/184/273",
+      image: process.env.PUBLIC_URL + '/assets/images/testemonials-1.png',
       stat: "Redução de 85%",
       statDescription: "no fechamento de ponto e folha de pagamento.",
       quote: "Antes do Pontomais, a gente demorava de 3 a 4 dias para fazer o fechamento de ponto e a folha de pagamento. Agora, fazemos isso em menos de 4 horas.",
       author: "Maya Bellan, Coordenadora de Financeiro na 10 Pastéis"
     },
     {
-      image: "https://picsum.photos/184/273",
+      image: process.env.PUBLIC_URL + '/assets/images/testemonials-2.png',
       stat: "Redução de 85%",
       statDescription: "no fechamento de ponto e folha de pagamento.",
       quote: "Antes do Pontomais, a gente demorava de 3 a 4 dias para fazer o fechamento de ponto e a folha de pagamento. Agora, fazemos isso em menos de 4 horas.",
       author: "Maya Bellan, Coordenadora de Financeiro na 10 Pastéis"
     },
     {
-      image: "https://picsum.photos/184/273",
+      image: process.env.PUBLIC_URL + '/assets/images/testemonials-1.png',
       stat: "Redução de 85%",
       statDescription: "no fechamento de ponto e folha de pagamento.",
       quote: "Antes do Pontomais, a gente demorava de 3 a 4 dias para fazer o fechamento de ponto e a folha de pagamento. Agora, fazemos isso em menos de 4 horas.",

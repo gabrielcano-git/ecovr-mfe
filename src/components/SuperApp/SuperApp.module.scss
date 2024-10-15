@@ -399,14 +399,17 @@
 }
 
 .wrapper-group-1000004284-child {
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    object-fit: contain;
-    position: absolute;
-    left: 6px;
-    top: 0;
-    transform: scale(1.023);
+    @apply
+        w-full
+        h-full
+        z-10
+        object-contain
+        absolute
+        left-[6px]
+        top-0
+        scale-[1.023]
+        -mb-[102px]
+        md:mb-0;
 }
 
 .wrapper-group-1000004284 {
@@ -432,10 +435,11 @@
 }
 
 .features-list-content-wrapper {
-    align-self: stretch;
-    flex-direction: row;
-    padding: 0 0 var(--padding-5xs);
-    padding: 18px;
+    @apply
+        self-stretch
+        p-4
+        mb-[102px]
+        md:mb-0;
 }
 
 .features-list-content {
@@ -944,10 +948,6 @@
 }
 
 @media (max-width: 1024px) {
-    .features-content-wrapper {
-        padding: 0;
-    }
-
     .wrapper-group-1000004284 {
         position: relative;
         top: auto;
