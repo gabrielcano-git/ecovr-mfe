@@ -1,4 +1,6 @@
-// import DigitalTransformation from './components/DigitalTransformation/DigitalTransformation';
+import HeroBanner from './components/HeroBanner/HeroBanner';
+import BigNumbersSection from './components/BigNumbersSection/BigNumbersSection';
+import DigitalTransformation from './components/DigitalTransformation/DigitalTransformation';
 import Solutions from './components/Solutions/SolutionsSection';
 import TestimonialsSection from './components/Testemonials/Testemonials';
 import ContactForm from './components/ContactForm/ContactForm';
@@ -18,10 +20,10 @@ const App: React.FC = () => {
       {/* <HeroBanner /> */}
 
       {/* Tudo que você precisa saber */}
+      <BigNumbersSection />
 
       {/* Sua empresa tem um problema? */}
-      {/* TODO: Ajustar esse componente cagado */}
-      {/* <DigitalTransformation /> */}
+      <DigitalTransformation />
 
       {/* Soluções sob medida para quem quer mais praticidade na gestão. */}
       <Solutions />
@@ -49,7 +51,6 @@ const App: React.FC = () => {
       <Newsletter />
 
       {/* Footer */}
-      {/* TODO: Logos e Setinhas */}
       <Footer />
     </>
   );

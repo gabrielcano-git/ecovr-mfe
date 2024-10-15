@@ -9,7 +9,7 @@ interface ButtonProps {
     // onClick?: (event: MouseEvent<HTMLElement>) => void;
     // type?: 'button' | 'submit' | 'reset';
     disabled?: boolean;
-    variants?: Array<'fit' | 'lg' | 'primary' | 'black'>;
+    variants?: Array<'fit' | 'lg' | 'primary' | 'black' | 'white' | 'white-borded'>;
 }
 
 const Button: FC<ButtonProps> = ({

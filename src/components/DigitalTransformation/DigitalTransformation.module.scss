@@ -22,8 +22,14 @@
         @apply space-y-6;
     }
 
-    &__problem-item,
-    .accordion-header {
+    &__problem-item {
+        background: transparent;
+        margin-bottom: 24px;
+
+        &:focus {
+            outline: none;
+        }
+
         @apply
             flex
             gap-4
@@ -58,6 +64,65 @@
         //     @apply
         //         flex;
         // }
+
+        &-intro {
+            @apply text-[#034d2e] text-base font-bold font-['Montserrat'] leading-relaxed tracking-tight;
+
+            strong {
+                @apply text-4xl font-bold text-green-700 mb-2;
+            }
+        }
+
+        &-description {
+            @apply
+                text-black
+                text-sm
+                font-normal
+                font-['Montserrat']
+                leading-tight
+                tracking-tight;
+
+            strong {
+                @apply
+                    font-bold;
+            }
+        }
+    }
+
+    .accordion-header {
+        background: transparent;
+
+        &:focus {
+            outline: none;
+        }
+
+        @apply
+            flex
+            gap-4
+            cursor-pointer;
+
+        &--active {
+            margin-bottom: 24px;
+
+            #{$this}__problem-description {
+                @apply
+                    text-[#1b2126];
+            }
+        }
+    }
+
+    .accordion-content {
+        @apply
+            hidden
+            flex
+            flex-col
+            gap-6;
+
+        &--active,
+        &.active {
+            @apply
+                flex;
+        }
 
         &-intro {
             @apply text-[#034d2e] text-base font-bold font-['Montserrat'] leading-relaxed tracking-tight;

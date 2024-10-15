@@ -65,4 +65,32 @@
                 text-[#1b2126];
         }   
     }
+
+    &--white {
+        @apply
+            bg-white
+            text-[#1b2126]
+            border
+            border-[#1b2126];
+        
+        &:hover {
+            @apply
+                bg-[#1b2126]
+                text-white;
+        }   
+    }
+
+    &--white-borded {
+        @apply
+            bg-white
+            text-[#1b2126]
+            border
+            border-[#1b2126];
+        
+        &:hover {
+            @apply
+                bg-[#1b2126]
+                text-white;
+        }   
+    }
 }

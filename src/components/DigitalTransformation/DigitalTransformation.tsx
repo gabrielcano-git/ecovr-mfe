@@ -3,6 +3,8 @@ import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import "react-tabs/style/react-tabs.css";
 import styles from "./DigitalTransformation.module.scss";
 import SectionTitle from "../SectionTitle/SectionTitle";
+import Button from "../Button/Button";
+import AccordionDigitalTransformation from "./AccordionDigitalTransformation";
 
 interface TabContent {
   icon: React.ReactNode;
@@ -46,9 +48,9 @@ const tabContents: TabContent[] = [
     </svg>
     ),
     description: "Problemas jurídicos no controle de ponto?",
-    solutionIntro: "Reduza até\n85%\ndo tempo gasto com a\ngestão de ponto.",
+    solutionIntro: "Reduza até<br /><strong>85%</strong><br />do tempo gasto com a<br />gestão de ponto.",
     solutionDescription:
-      "Conte com uma solução digital e de acordo com a lei, para otimizar a gestão de jornada e facilitar a rotina.",
+      "Conte com uma <strong>solução digital</strong> e de acordo com a lei, para otimizar a gestão de jornada e facilitar a rotina.",
     ctaText: "Simplificar a gestão",
   },
   {
@@ -70,9 +72,9 @@ const tabContents: TabContent[] = [
     </svg>
     ),
     description: "Dificuldade para aumentar a satisfação dos trabalhadores?",
-    solutionIntro: "Reduza até\n85%\ndo tempo gasto com a\ngestão de ponto. 2",
+    solutionIntro: "Reduza até<br /><strong>85%</strong><br />do tempo gasto com a<br />gestão de ponto. 2",
     solutionDescription:
-      "Conte com uma solução digital e de acordo com a lei, para otimizar a gestão de jornada e facilitar a rotina. 2",
+      "Conte com uma <strong>solução digital</strong> e de acordo com a lei, para otimizar a gestão de jornada e facilitar a rotina. 2",
     ctaText: "Simplificar a gestão 2",
   },
   {
@@ -99,9 +101,9 @@ const tabContents: TabContent[] = [
     </svg>
     ),
     description: "Quer ajudar o trabalhador a tirar os planos do papel?",
-    solutionIntro: "Reduza até\n85%\ndo tempo gasto com a\ngestão de ponto. 3",
+    solutionIntro: "Reduza até<br /><strong>85%</strong><br />do tempo gasto com a<br />gestão de ponto. 3",
     solutionDescription:
-      "Conte com uma solução digital e de acordo com a lei, para otimizar a gestão de jornada e facilitar a rotina. 3",
+      "Conte com uma <strong>solução digital</strong> e de acordo com a lei, para otimizar a gestão de jornada e facilitar a rotina. 3",
     ctaText: "Simplificar a gestão 3",
   },
 ];
@@ -135,6 +137,7 @@ const DigitalTransformation: React.FC = () => {
               <div className={styles["digital-transformation__problem-icon"]}>
                 {tab.icon}
               </div>
+
               <div
                 className={
                   styles["digital-transformation__problem-description"]
@@ -162,62 +165,27 @@ const DigitalTransformation: React.FC = () => {
                   : ""
               }`}
             >
-              <div className={styles["digital-transformation__solution-intro"]}>
-                {tab.solutionIntro}
-              </div>
+              <div
+                className={styles["digital-transformation__solution-intro"]}
+                dangerouslySetInnerHTML={{__html: tab.solutionIntro}}
+              />
+
               <p
                 className={
                   styles["digital-transformation__solution-description"]
                 }
-              >
-                {tab.solutionDescription}
-              </p>
-              <button className={styles["digital-transformation__cta"]}>
+                dangerouslySetInnerHTML={{__html: tab.solutionDescription}}
+              />
+
+              <Button variants={['primary', 'fit']}>
                 {tab.ctaText}
-              </button>
+              </Button>
             </TabPanel>
           ))}
         </div>
       </Tabs>
 
-      {/* asdfasdf */}
-      <div className={styles['accordion']}>
-        {tabContents.map((tab, index) => (
-          <div key={index} className={styles["accordion-item"]}>
-            <div className={styles["accordion-header"]}>
-              <div className={styles["digital-transformation__problem-icon"]}>
-                {tab.icon}
-              </div>
-              <div
-                className={
-                  styles["digital-transformation__problem-description"]
-                }
-              >
-                {tab.description}
-              </div>
-            </div>
-            <div
-              className={`${styles["accordion-content"]} ${
-                selectedTab === index ? "active" : ""
-              }`}
-            >
-              <div className={styles["digital-transformation__solution-intro"]}>
-                {tab.solutionIntro}
-              </div>
-              <p
-                className={
-                  styles["digital-transformation__solution-description"]
-                }
-              >
-                {tab.solutionDescription}
-              </p>
-              <button className={styles["digital-transformation__cta"]}>
-                {tab.ctaText}
-              </button>
-            </div>
-          </div>
-        ))}
-      </div>
+      <AccordionDigitalTransformation />
     </div>
   );
 };

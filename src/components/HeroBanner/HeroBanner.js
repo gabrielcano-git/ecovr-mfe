@@ -1,14 +1,10 @@
+import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-import Slider from "react-slick";
-
-//   import 'slick-carousel/slick/slick.css';
-//   import 'slick-carousel/slick/slick-theme.css';
-//   import $ from 'jquery';
-//   import 'slick-carousel';
-
 import styles from './HeroBanner.module.scss';
+import Button from '../Button/Button';
+import SectionTitle from '../SectionTitle/SectionTitle';
 
 const Banner = () => {
     const settings = {
@@ -36,78 +32,71 @@ const Banner = () => {
     return (
         <section className={styles['hero-banner']}>
             <div className={styles['carousel-container']}>
-                <div className={styles['hero-section']}>
+                {/* <div className={styles['hero-section']}>
                     <div className={styles['hero-content']}>
                         <div className={styles['hero-title-wrapper']}>
-                            <h1 className={styles['hero-title']}>
-                                A VR <span>facilita a vida</span>
-                            </h1>
+                            <SectionTitle as={'h1'} variant={['primary']}>
+                                A VR <u>facilita a vida</u>
+                            </SectionTitle>
+
                             <div className={styles['hero-subtitle']}>
-                                <span>Somos uma marca de </span>
-                                <b>soluções essenciais </b>
-                                <span>
-                                    que otimizam a gestão de ponto, benefícios, mobilidade e muito
-                                    mais.
-                                </span>
+                                Somos uma marca de <strong>soluções essenciais</strong>
+                                que otimizam a gestão de ponto, benefícios,
+                                mobilidade e muito mais.
                             </div>
                         </div>
 
                         <div className={styles['hero-buttons']}>
-                            <button className={styles['primary-button']}>
-                                <div className={styles['button-content']}>
-                                    <img className={styles['button-icon']} alt="" src="/assets/images/iconsvr.svg" />
-                                    <div className={styles['button-label']}>Contrate agora</div>
-                                    <img className={styles['button-icon']} alt="" src="/assets/images/iconsvr.svg" />
-                                </div>
-                            </button>
-                            <button className={styles['secondary-button']}>
-                                <img className={styles['button-icon']} alt="" src="/assets/images/iconsvr.svg" />
-                                <div className={styles['button-label']}>Solicite uma proposta</div>
-                                <img className={styles['button-icon']} alt="" src="/assets/images/iconsvr.svg" />
-                            </button>
-                        </div>
-                    </div>
-                </div>
+                            <Button variants={['primary', 'fit']}>
+                                Contrate agora
+                            </Button>
 
-                <Slider {...settings}>
+                            <Button variants={['white-borded', 'fit']}>
+                                Solicite uma proposta
+                            </Button>
+                        </div>
+                    </div>
+                </div> */}
+
+                <Slider className={styles['carousel']} {...settings}>
                     <div className={styles['carousel-item']}>
                         <div className={styles['carousel-image-wrapper']}>
-                            <img src="/assets/images/banner-1-vr.png" alt="Item 1" />
+                            <img src={process.env.PUBLIC_URL + '/assets/images/banner-1-vr.png'} alt="" />
                         </div>
                     </div>
                     <div className={styles['carousel-item']}>
                         <div className={styles['carousel-image-wrapper']}>
-                            <img src="/assets/images/banner-4.png" alt="Item 1" />
+                            <img src={process.env.PUBLIC_URL + '/assets/images/banner-4.png'} alt="" />
                         </div>
                     </div>
                     <div className={styles['carousel-item']}>
                         <div className={styles['carousel-image-wrapper']}>
-                            <img src="/assets/images/banner-5.png" alt="Item 1" />
+                            <img src={process.env.PUBLIC_URL + '/assets/images/banner-5.png'} alt="" />
                         </div>
                     </div>
                     <div className={styles['carousel-item']}>
                         <div className={styles['carousel-image-wrapper']}>
-                            <img src="/assets/images/banner-2.png" alt="Item 2" />
+                            <img src={process.env.PUBLIC_URL + '/assets/images/banner-2.png'} alt="" />
                         </div>
                     </div>
                     <div className={styles['carousel-item']}>
                         <div className={styles['carousel-image-wrapper']}>
-                            <img src="/assets/images/banner-3.png" alt="Item 3" />
+                            <img src={process.env.PUBLIC_URL + '/assets/images/banner-3.png'} alt="" />
                         </div>
                     </div>
                     <div className={styles['carousel-item']}>
                         <div className={styles['carousel-image-wrapper']}>
-                            <img src="/assets/images/banner-2.png" alt="Item 4" />
+                            <img src={process.env.PUBLIC_URL + '/assets/images/banner-2.png'} alt="" />
                         </div>
                     </div>
                     <div className={styles['carousel-item']}>
                         <div className={styles['carousel-image-wrapper']}>
-                            <img src="/assets/images/banner-3.png" alt="Item 5" />
+                            <img src={process.env.PUBLIC_URL + '/assets/images/banner-3.png'} alt="" />
                         </div>
                     </div>
                     <div className={styles['carousel-item']}>
                         <div className={styles['carousel-image-wrapper']}>
-                            <img src="/assets/images/banner-2.png" alt="Item 6" />
+                            <img src={process.env.PUBLIC_URL + '/assets/images/banner-2.png'} alt="" />
                         </div>
                     </div>
                 </Slider>

@@ -1,0 +1,262 @@
+.big-numbers-section {
+  @apply
+        px-[18px]
+        py-[50px]
+        md:px-0
+        md:pt-[40px]
+        md:pb-[88px];
+}
+
+.features-section,
+.features-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+
+.features-container {
+  flex: 1;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.features-section {
+  display: flex !important;
+  align-self: stretch;
+  flex-direction: row;
+  padding: 0 68px 88px;
+  box-sizing: border-box;
+  flex-shrink: 0;
+  text-align: center;
+  font-size: 32px;
+  color: #1b2126;
+  font-family: Montserrat;
+}
+
+.features-content {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0 21px 0 20px;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+.header-container {
+  height: 87px;
+  width: 609px;
+  position: relative;
+  max-width: 100%;
+}
+
+.header-titles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+  height: 100%;
+  z-index: 1;
+}
+
+.header-titles {
+  flex-direction: row;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+
+.header-group {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 8px;
+  max-width: 100%;
+}
+
+.header-title {
+  margin: 0;
+  height: 87px;
+  flex: 1;
+  position: relative;
+  font-size: inherit;
+  line-height: 43.2px;
+  font-weight: 700;
+  font-family: inherit;
+  font-size: 32px;
+  display: inline-block;
+  max-width: 100%;
+}
+
+.header-subtitle {
+  width: 813px;
+  position: relative;
+  font-size: 16px;
+  line-height: 27px;
+  display: none;
+  max-width: 100%;
+}
+
+.image-and-cards-wrapper {
+  @apply
+    container
+    mx-auto
+    flex
+    justify-between
+    items-center;
+}
+
+.image-container img {
+  max-width: 100%;
+}
+
+.info-cards {
+  display: flex;
+  width: 100%;
+  max-width: 503px;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 24px;
+}
+
+.info-card {
+  @apply
+    max-w-[503px]
+    min-h-[217px]
+    p-6
+    bg-white
+    rounded-2xl
+    shadow
+    flex-col
+    justify-start
+    items-start
+    gap-2
+    inline-flex;
+}
+
+.info-stats {
+  @apply
+    self-stretch
+    min-h-[72px]
+    flex-col
+    justify-start
+    items-start
+    flex;
+
+  @apply
+    self-stretch
+    text-[#034d2e]
+    text-base
+    md:text-xl
+    font-bold
+    font-['Montserrat']
+    leading-[30px]
+    tracking-tight;
+
+
+  strong {
+    @apply
+      self-stretch
+      text-[#034d2e]
+      text-2xl
+      md:text-[32px]
+      font-bold
+      font-['Montserrat']
+      leading-[42px]
+      tracking-tight;
+  }
+}
+
+.info-text {
+  @apply
+    text-[#1b2126]
+    text-base
+    font-medium
+    font-['Montserrat']
+    leading-normal
+    tracking-tight;
+}
+
+.button-learn-more {
+  @apply
+      flex
+      items-center
+      justify-center
+      gap-[5px]
+      w-fit
+      text-[#00b11d]
+      text-sm
+      font-semibold
+      font-['Montserrat']
+      leading-[32px]
+      tracking-tight
+      block
+      transition-all
+      duration-300
+      ease-in-out;
+
+  svg {
+      fill: #00b11d;
+  }
+
+  &:hover {
+      @apply
+          text-[#00b11d/80]
+          gap-[8px];
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .features-container {
+    gap: 24px;
+  }
+  .image-container {
+    display: none;
+  }
+  .features-section {
+    padding-bottom: 57px;
+    box-sizing: border-box;
+  }
+  .image-and-cards-wrapper {
+    flex-wrap: wrap;
+  }
+  .info-cards {
+    width: auto;
+  }
+}
+@media screen and (max-width: 750px) {
+  .header-title {
+    height: auto;
+    font-size: 24px;
+    line-height: 35px;
+    text-align: left;
+  }
+  .info-stats {
+    text-align: left;
+  }
+  .stats-number {
+    font-size: 24px;
+  }
+  .stats-description {
+    font-size: 16px;
+  }
+  .info-text {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .header-title,
+  .stats-number {
+    font-size: 19px;
+    line-height: 26px;
+  }
+  .stats-number {
+    line-height: 25px;
+  }
+}
