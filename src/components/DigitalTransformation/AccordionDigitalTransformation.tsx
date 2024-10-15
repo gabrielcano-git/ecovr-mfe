@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import "react-tabs/style/react-tabs.css";
 import styles from "./DigitalTransformation.module.scss";
 import Button from "../Button/Button";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 
 interface TabContent {
   icon: React.ReactNode;
@@ -182,6 +184,11 @@ const AccordionDigitalTransformation: React.FC = () => {
             >
               {tab.description}
             </div>
+
+            <FontAwesomeIcon
+              className={styles['iconAccordion']}
+              icon={faChevronDown}
+            />
           </div>
 
           <div

@@ -101,12 +101,25 @@
             gap-4
             cursor-pointer;
 
+        .iconAccordion {
+            @apply
+                block
+                md:hidden
+                transition-all
+                duration-300;
+        }
+
         &--active {
             margin-bottom: 24px;
 
             #{$this}__problem-description {
                 @apply
                     text-[#1b2126];
+            }
+
+            .iconAccordion {
+                @apply
+                    rotate-180;
             }
         }
     }
