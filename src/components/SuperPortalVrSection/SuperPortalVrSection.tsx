@@ -14,31 +14,31 @@ const SuperPortalVrSection: React.FC = () => {
     const superAppItems: SuperAppItem[] = [
         {
             title: 'Digitalize, agende e automatize processos',
-            image: 'https://picsum.photos/248/173',
+            image: process.env.PUBLIC_URL + '/assets/images/super-portal-carousel.png',
         },
         {
             title: 'Gestão centralizada e simplificada para o empregador',
-            image: 'https://picsum.photos/248/173',
+            image: process.env.PUBLIC_URL + '/assets/images/super-portal-carousel.png',
         },
         {
             title: 'Gestão centralizada e simplificada para o empregador',
-            image: 'https://picsum.photos/248/173',
+            image: process.env.PUBLIC_URL + '/assets/images/super-portal-carousel.png',
         },
         {
             title: 'Gestão centralizada e simplificada para o empregador',
-            image: 'https://picsum.photos/248/173',
+            image: process.env.PUBLIC_URL + '/assets/images/super-portal-carousel.png',
         },
         {
             title: 'Gestão centralizada e simplificada para o empregador',
-            image: 'https://picsum.photos/248/173',
+            image: process.env.PUBLIC_URL + '/assets/images/super-portal-carousel.png',
         },
         {
             title: 'Gestão centralizada e simplificada para o empregador',
-            image: 'https://picsum.photos/248/173',
+            image: process.env.PUBLIC_URL + '/assets/images/super-portal-carousel.png',
         },
         {
             title: 'Gestão centralizada e simplificada para o empregador',
-            image: 'https://picsum.photos/248/173',
+            image: process.env.PUBLIC_URL + '/assets/images/super-portal-carousel.png',
         },
     ];
 
@@ -93,7 +93,14 @@ const SuperPortalVrSection: React.FC = () => {
 
                 <div className="flex-col justify-center items-center gap-6 flex mt-10">
                     <img
+                        className='hidden md:block'
                         src={process.env.PUBLIC_URL + '/assets/images/super-portal-vr-image.png'}
+                        alt="SuperPortal VR"
+                    />
+
+                    <img
+                        className='block md:hidden'
+                        src={process.env.PUBLIC_URL + '/assets/images/super-portal-vr-image-mobile.png'}
                         alt="SuperPortal VR"
                     />
                 </div>
