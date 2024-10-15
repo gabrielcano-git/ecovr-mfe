@@ -32,10 +32,14 @@ const Banner = () => {
     return (
         <section className={styles['hero-banner']}>
             <div className={styles['carousel-container']}>
-                {/* <div className={styles['hero-section']}>
+                <div className={styles['hero-section']}>
                     <div className={styles['hero-content']}>
                         <div className={styles['hero-title-wrapper']}>
-                            <SectionTitle as={'h1'} variant={['primary']}>
+                            <SectionTitle
+                                className='text-center'
+                                as={'h1'}
+                                variant={['primary']}
+                            >
                                 A VR <u>facilita a vida</u>
                             </SectionTitle>
 
@@ -56,49 +60,41 @@ const Banner = () => {
                             </Button>
                         </div>
                     </div>
-                </div> */}
+                </div>
 
                 <Slider className={styles['carousel']} {...settings}>
-                    <div className={styles['carousel-item']}>
+                    {/* <div className={styles['carousel-item']}> */}
                         <div className={styles['carousel-image-wrapper']}>
                             <img src={process.env.PUBLIC_URL + '/assets/images/banner-1-vr.png'} alt="" />
                         </div>
-                    </div>
-                    <div className={styles['carousel-item']}>
+                    {/* <div className={styles['carousel-item']}> */}
                         <div className={styles['carousel-image-wrapper']}>
                             <img src={process.env.PUBLIC_URL + '/assets/images/banner-4.png'} alt="" />
                         </div>
-                    </div>
-                    <div className={styles['carousel-item']}>
+                    {/* <div className={styles['carousel-item']}> */}
                         <div className={styles['carousel-image-wrapper']}>
                             <img src={process.env.PUBLIC_URL + '/assets/images/banner-5.png'} alt="" />
                         </div>
-                    </div>
-                    <div className={styles['carousel-item']}>
+                    {/* <div className={styles['carousel-item']}> */}
                         <div className={styles['carousel-image-wrapper']}>
                             <img src={process.env.PUBLIC_URL + '/assets/images/banner-2.png'} alt="" />
                         </div>
-                    </div>
-                    <div className={styles['carousel-item']}>
+                    {/* <div className={styles['carousel-item']}> */}
                         <div className={styles['carousel-image-wrapper']}>
                             <img src={process.env.PUBLIC_URL + '/assets/images/banner-3.png'} alt="" />
                         </div>
-                    </div>
-                    <div className={styles['carousel-item']}>
+                    {/* <div className={styles['carousel-item']}> */}
                         <div className={styles['carousel-image-wrapper']}>
                             <img src={process.env.PUBLIC_URL + '/assets/images/banner-2.png'} alt="" />
                         </div>
-                    </div>
-                    <div className={styles['carousel-item']}>
+                    {/* <div className={styles['carousel-item']}> */}
                         <div className={styles['carousel-image-wrapper']}>
                             <img src={process.env.PUBLIC_URL + '/assets/images/banner-3.png'} alt="" />
                         </div>
-                    </div>
-                    <div className={styles['carousel-item']}>
+                    {/* <div className={styles['carousel-item']}> */}
                         <div className={styles['carousel-image-wrapper']}>
                             <img src={process.env.PUBLIC_URL + '/assets/images/banner-2.png'} alt="" />
                         </div>
-                    </div>
                 </Slider>
             </div>
         </section>

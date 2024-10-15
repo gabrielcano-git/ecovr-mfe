@@ -158,7 +158,7 @@ const Footer: React.FC = () => {
 
         <div className="flex flex-col md:flex-row gap-[24px] items-center justify-between">
           <div className="w-full md:w-fit">
-            <img src="/assets/images/logo-footer.svg" alt="" />
+            <img src={process.env.PUBLIC_URL + "/assets/images/logo-footer.svg"} alt="" />
 
             <div className={styles["footer__social-icons"]}>
               <a
@@ -190,7 +190,7 @@ const Footer: React.FC = () => {
 
           <div className="w-full md:w-fit">
             <div className="text-left md:text-center text-white uppercase text-base font-semibold mb-4 uppercase leading-relaxed">
-              Baixe o Super App
+              BAIXE O SUPERAPP VR
             </div>
 
             <div className="flex flex-col md:flex-row gap-6">

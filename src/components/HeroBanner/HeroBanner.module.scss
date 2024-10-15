@@ -1,23 +1,11 @@
-// * {
-//     margin: 0;
-//     padding: 0;
-//     box-sizing: border-box;
-//   }
-
-//   body {
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//     height: 100%;
-//     background-color: #f0f0f0;
-//   }
-
 .hero-banner {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  background-color: #f0f0f0;
+  @apply
+    flex
+    flex-col
+    items-center
+    justify-center
+    h-full
+    bg-[#f0f0f0];
 }
 
 .carousel-container {
@@ -65,13 +53,16 @@
     flex
     flex-col
     text-center
-    gap-2;
+    gap-2
+    px-[18px];
 }
 
 .hero-subtitle {
   font-family: "Montserrat", sans-serif;
 
   @apply
+    text-left
+    md:text-center
     text-sm
     md:text-base
     leading-[21.6px];
@@ -84,46 +75,46 @@
   width: 100%;
 }
 
-.carousel-item {
+.slick-item {
   display: flex !important;
   padding: 10px;
   justify-content: center;
   transition: transform 0.5s ease;
 }
 
-.carousel-item img {
+.slick-item img {
   max-width: 100%;
   transition: transform 0.5s ease;
 }
 
-.carousel-item:nth-child(even) .carousel-image-wrapper {
+.slick-item:nth-child(even) .carousel-image-wrapper {
   padding-top: 70px;
 }
 
-.carousel-item:nth-child(odd) .carousel-image-wrapper {
+.slick-item:nth-child(odd) .carousel-image-wrapper {
   padding-top: 130px;
 }
 
-.carousel-item:nth-child(even) .carousel-image-wrapper,
-.carousel-item:nth-child(odd) .carousel-image-wrapper {
+.slick-item:nth-child(even) .carousel-image-wrapper,
+.slick-item:nth-child(odd) .carousel-image-wrapper {
   width: 174px;
   height: 245px;
 }
 
-.carousel-item.slick-current .carousel-image-wrapper {
+.slick-item.slick-current .carousel-image-wrapper {
   width: 193px;
   height: 409px;
 }
 
-.carousel-item.slick-current .carousel-image-wrapper {
+.slick-item.slick-current .carousel-image-wrapper {
   padding-top: 0;
 }
 
-.carousel-item.slick-current {
+.slick-item.slick-current {
   // background: url("../../../public/img/ico-device.png") top center no-repeat;
 }
 
-.carousel-item.slick-current img {
+.slick-item.slick-current img {
   margin-left: 9px;
 }
 
@@ -133,7 +124,7 @@
 }
 
 /* Central Item (ampliado) */
-.slick-center .carousel-item img {
+.slick-center .slick-item img {
   transform: scale(1.5);
 }
 
@@ -211,11 +202,11 @@
 }
 
 @media screen and (max-width: 750px) {
-  .carousel-item.slick-current {
+  .slick-item.slick-current {
     background: none;
   }
 
-  .carousel-item.slick-current img {
+  .slick-item.slick-current img {
     margin: 0;
   }
 
@@ -236,16 +227,16 @@
     opacity: 9;
   }
 
-  .carousel-item:nth-child(odd) .carousel-image-wrapper {
+  .slick-item:nth-child(odd) .carousel-image-wrapper {
     padding-top: 90px;
   }
 
-  .carousel-item.slick-current .carousel-image-wrapper {
+  .slick-item.slick-current .carousel-image-wrapper {
     padding-top: 0;
   }
 
-  .carousel-item:nth-child(even) .carousel-image-wrapper,
-  .carousel-item:nth-child(odd) .carousel-image-wrapper {
+  .slick-item:nth-child(even) .carousel-image-wrapper,
+  .slick-item:nth-child(odd) .carousel-image-wrapper {
     overflow: hidden;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;

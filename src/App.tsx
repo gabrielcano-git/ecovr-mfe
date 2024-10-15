@@ -17,7 +17,7 @@ const App: React.FC = () => {
       {/* Header */}
 
       {/* Hero Banner */}
-      {/* <HeroBanner /> */}
+      <HeroBanner />
 
       {/* Tudo que você precisa saber */}
       <BigNumbersSection />

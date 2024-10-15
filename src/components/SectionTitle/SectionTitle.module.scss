@@ -15,7 +15,8 @@
     
     &--primary {
         @apply
-            text-[48px];
+            text-[32px]
+            md:text-[48px];
     }
 
     u {
