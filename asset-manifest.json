@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/ecovr-mfe/static/css/main.b6cea4df.css",
-    "main.js": "/ecovr-mfe/static/js/main.d45f3773.js",
+    "main.css": "/ecovr-mfe/static/css/main.3f23c08b.css",
+    "main.js": "/ecovr-mfe/static/js/main.95f277d9.js",
     "static/js/453.21b47847.chunk.js": "/ecovr-mfe/static/js/453.21b47847.chunk.js",
     "static/media/fa-solid-900.ttf": "/ecovr-mfe/static/media/fa-solid-900.07ed6d5fa32c1d54af0f.ttf",
     "static/media/fa-solid-900.woff2": "/ecovr-mfe/static/media/fa-solid-900.93f719f4d62bfa3e748c.woff2",
@@ -11,12 +11,12 @@
     "static/media/slick.ttf": "/ecovr-mfe/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/ecovr-mfe/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/ecovr-mfe/index.html",
-    "main.b6cea4df.css.map": "/ecovr-mfe/static/css/main.b6cea4df.css.map",
-    "main.d45f3773.js.map": "/ecovr-mfe/static/js/main.d45f3773.js.map",
+    "main.3f23c08b.css.map": "/ecovr-mfe/static/css/main.3f23c08b.css.map",
+    "main.95f277d9.js.map": "/ecovr-mfe/static/js/main.95f277d9.js.map",
     "453.21b47847.chunk.js.map": "/ecovr-mfe/static/js/453.21b47847.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b6cea4df.css",
-    "static/js/main.d45f3773.js"
+    "static/css/main.3f23c08b.css",
+    "static/js/main.95f277d9.js"
   ]
 }
