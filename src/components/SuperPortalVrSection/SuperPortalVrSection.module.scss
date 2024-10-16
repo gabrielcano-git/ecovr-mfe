@@ -1,3 +1,5 @@
+@import '~@fortawesome/fontawesome-free/scss/solid';
+
 .super-portal-vr {
     @apply
         bg-neutral-100/100
@@ -91,4 +93,50 @@
 .swiper-super-portal-vr :global(.swiper-pagination-bullet-active) {
     @apply
         bg-[#02d72f];
+}
+
+.swiper-super-portal-vr :global(.swiper-button-prev),
+.swiper-super-portal-vr :global(.swiper-button-next) {
+    position: absolute;
+    top: calc(50% - 40px);
+    z-index: 9;
+
+    @apply
+        w-10
+        h-10
+        p-2
+        bg-[#02d72f]
+        rounded-[100px]
+        shadow
+        justify-center
+        items-center
+        gap-2
+        hidden
+        md:inline-flex;
+
+        &::after {
+            font-family: 'Font Awesome 6 Free';
+            font-weight: 900;
+        }
+}
+
+.swiper-super-portal-vr :global(.swiper-button-prev) {
+    left: 60px;
+
+    &::after {
+        content: '\f060';
+    }
+}
+
+.swiper-super-portal-vr :global(.swiper-button-next) {
+    right: 60px;
+
+    &::after {
+        content: '\f061';
+    }
+}
+
+.swiper-super-portal-vr :global(.swiper-button-disabled) {
+    @apply
+        hidden;
 }
