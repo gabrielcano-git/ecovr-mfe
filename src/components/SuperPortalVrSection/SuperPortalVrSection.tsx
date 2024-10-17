@@ -5,6 +5,7 @@ import type { Swiper as SwiperType } from 'swiper';
 import styles from './SuperPortalVrSection.module.scss';
 import CardSimple from '../CardSimple/CardSimple';
 import SectionTitle from '../SectionTitle/SectionTitle';
+import Button from '../Button/Button';
 
 interface SuperAppItem {
     title: string;
@@ -93,12 +94,9 @@ const SuperPortalVrSection: React.FC = () => {
             </div>
           </div>
 
-          <a
-            href="https://google.com"
-            className={styles["super-portal-vr__cta"]}
-          >
+          <Button variants={['primary', 'fit']}>
             Conhecer solução
-          </a>
+          </Button>
         </div>
 
         <div className="flex-col justify-center items-center gap-6 flex mt-10">
